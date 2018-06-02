@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+	<session-config>
+		<session-timeout>
+			30
+		</session-timeout>
+	</session-config>
+	<welcome-file-list>
+		<welcome-file>
+			index.html
+		</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>servlet_status</servlet-name>
+		<servlet-class>servlet_status</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servlet_status</servlet-name>
+		<url-pattern>/servlet/servlet-status</url-pattern>
+	</servlet-mapping>
+
+</web-app>
