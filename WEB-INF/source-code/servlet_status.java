@@ -43,7 +43,7 @@ public class servlet_status extends HttpServlet {
 			{"request.getRequestURI()", request.getRequestURI()},
 			{"request.getRequestURL() ", request.getRequestURL().toString() },
 			{"request.getServletPath()", request.getServletPath()},
-			{"request.getServletContext().getRealPath(\"/\")(从servlet3.0开始)", request.getServletContext().getRealPath("/")},
+			// {"request.getServletContext().getRealPath(\"/\")(从servlet3.0开始)", request.getServletContext().getRealPath("/")},
 			{"request.getSession().getServletContext().getRealPath(\"/\")(从servlet2.3开始)", request.getSession().getServletContext().getRealPath("/")},
 			{"--------客户端信息--------", ""},
 			{"request.getRemoteAddr()", request.getRemoteAddr()},
