@@ -43,7 +43,7 @@ public class servlet_status extends HttpServlet {
 			{"request.getRequestURI()", request.getRequestURI()},
 			{"request.getRequestURL() ", request.getRequestURL().toString() },
 			{"request.getServletPath()", request.getServletPath()},
-			// {"request.getServletContext().getRealPath(\"/\")(从servlet3.0开始)", request.getServletContext().getRealPath("/")},
+			{"request.getServletContext().getRealPath(\"/\")(从servlet3.0开始)", request.getServletContext().getRealPath("/")},
 			{"request.getSession().getServletContext().getRealPath(\"/\")(从servlet2.3开始)", request.getSession().getServletContext().getRealPath("/")},
 			{"--------客户端信息--------", ""},
 			{"request.getRemoteAddr()", request.getRemoteAddr()},
@@ -52,7 +52,7 @@ public class servlet_status extends HttpServlet {
 		};
 
 		StringBuilder sb = new StringBuilder();
-		sb.append("<table border=\"1\" borderColor=\"#ccc\" cellspacing=\"0\" cellpadding=\"5\" style=\"border-collapse:collapse;\">\n");
+		sb.append("<table border=\"1\" borderColor=\"#666\" cellspacing=\"0\" cellpadding=\"5\" style=\"border-collapse:collapse;\">\n");
 		for(int i = 0, l = status.length; i < l; i++){
 			sb.append("\t<tr>\n");
 			sb.append("\t\t<td>").append( status[i][0] ).append("</td>\n");
