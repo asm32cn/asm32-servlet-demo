@@ -25,6 +25,7 @@ public class servlet_status extends HttpServlet {
 		out.println("<title>" + m_strAppName_cn + "</title>");
 		out.println("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>");
 		out.println("</head>");
+		out.println("<style> body{ background-color:#a5cbf7; }</style>");
 		out.println("<body>");
 
 		out.println("<h1>" + m_strAppName_cn + "</h1>");
